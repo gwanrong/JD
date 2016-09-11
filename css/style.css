@@ -1,0 +1,2610 @@
+
+html, body {
+    width: 100%;
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    color: #666;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+    font-family: "microsoft yahei";
+    font-weight: 400;
+}
+
+em, i {
+    font-style: normal;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.w1210 {
+    margin: 0 auto;
+    width: 1210px;
+}
+
+.header {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #F1F1F1;
+}
+
+.red {
+    color: #C81623;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+.selected {
+    background: #C81623;
+}
+
+.floor {
+    margin-bottom: 30px;
+}
+
+.header .hLeft {
+    float: left;
+    position: relative;
+    border-left: 1px solid #F1F1F1;
+    border-right: 1px solid #F1F1F1;
+    padding: 0 10px;
+    width: 75px;
+    height: 30px;
+    cursor: default;
+}
+
+.header .hLeft:hover {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background: #fff;
+}
+
+.header .hLeft .leftBo {
+    display: none;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    margin-left: -1px;
+    border: 1px solid transparent;
+    padding: 10px 0 10px 10px;
+    width: 301px;
+    line-height: 24px;
+    background: #fff;
+    z-index: 111;
+}
+
+.header .hLeft:hover .leftBo {
+    display: block;
+    border: 1px solid #ddd;
+}
+
+.header .hLeft .leftBo li {
+    float: left;
+    padding: 2px 0;
+    width: 56px;
+}
+
+.header .hLeft .leftBo li a {
+    padding: 4px 8px;
+}
+
+.header .hLeft .leftBo li a:hover {
+    background: #F4F4F4;
+}
+
+.header .hLeft .leftBo li a.selected {
+    background: #C81623;
+    color: #fff;
+}
+
+.white {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 29px;
+    height: 1px;
+    background: #fff;
+    z-index: 111;
+}
+
+.header .hLeft:hover .white {
+    display: block;
+}
+
+.header .hLeft .white {
+    width: 100%;
+}
+
+.header .rhombRel {
+    position: relative;
+}
+
+.header .rhomb {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    display: block;
+    height: 7px;
+    overflow: hidden;
+    font: 400 15px/15px consolas;
+    color: #6A6A6A;
+    transition: transform .1s ease-in 0s;
+    -webkit-transition: -webkit-transform .1s ease-in 0s;
+}
+
+.header .rhomb s {
+    position: relative;
+    top: -7px;
+    text-decoration: none;
+}
+
+.header .rhombRel:hover .rhomb {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+/*.header .hRight > li:hover em {*/
+/*background-position: 0 0;*/
+/*}*/
+
+.header .hRight {
+    float: right;
+}
+
+.header .hRight > li {
+    position: relative;
+    float: left;
+    margin: 0 2px;
+    padding: 0 8px;
+    height: 30px;
+}
+
+.header .hRight > li.line {
+    margin: 9px 0 0 0;
+    padding: 0;
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+}
+
+.header .hRight > li span {
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    background: url("../img/jd2015img.png") no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+}
+
+.header .hRight > li.span:hover span {
+    background-position: 0 -25px;
+}
+
+.hRight li.em {
+    border-left: 1px solid #F1F1F1;
+    border-right: 1px solid #F1F1F1;
+    padding-right: 25px;
+}
+
+.hRight .em:hover {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background: #fff;
+}
+
+.hRight .em .emHid {
+    display: none;
+    position: absolute;
+    top: 30px;
+    border: 1px solid #ddd;
+    width: 280px;
+    overflow: hidden;
+    z-index: 11;
+    /*background: url("http://static.360buyimg.com/devfe/toolbar/1.0.0/css/i/loading.gif") no-repeat #fff center center;*/
+    background: #fff;
+}
+
+.hRight .em .emHid .hidTop {
+    margin: 10px 0;
+}
+
+.hRight .em .emHid .hidImg {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.hRight .em .white {
+    top: 30px;
+    z-index: 888;
+}
+
+.header .hRight li.em:hover .emHid {
+    display: block;
+}
+
+.header .hRight li.em:hover .white {
+    display: block;
+}
+
+.hRight .em .emHid .topRight {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.hRight .emHid .topRight h3 a {
+    font-weight: bold;
+}
+
+.hRight .emHid .hidBottom ul {
+    float: left;
+    padding-bottom: 10px;
+    width: 140px;
+}
+
+.hRight .emHid .hidBottom ul li {
+    height: 26px;
+}
+
+.hRight .em a.myJd {
+    display: inline-block;
+    width: 49px;
+}
+
+.hRight div.myJd {
+    padding-left: 10px;
+}
+
+.hRight div.myJd, .hRight div.focusJd {
+    left: -1px;
+}
+
+.hRight .phoneJd .phone {
+    left: -1px;
+    display: none;
+    padding: 0;
+    width: 250px;
+    height: 195px;
+    background: url("../img/phone.png") no-repeat;
+}
+
+.hRight .phoneJd .phone .link1, .hRight .phoneJd .phone .link2, .hRight .phoneJd .phone .link3, .hRight .phoneJd .phone .link4, .hRight .phoneJd .phone .link5, .hRight .phoneJd .phone .link6, .hRight .phoneJd .phone .link7,
+.hRight .phoneJd .phone .link8, .hRight .phoneJd .phone .link9 {
+    position: absolute;
+}
+
+.hRight .phoneJd .phone .link1, .hRight .phoneJd .phone .link2 {
+    left: 99px;
+}
+
+.hRight .phoneJd .phone .link1 {
+    top: 2px;
+}
+
+.hRight .phoneJd .phone .link1:hover, .hRight .phoneJd .phone .link3:hover {
+    color: #666;
+}
+
+.hRight .phoneJd .phone .link2 {
+    top: 20px;
+}
+
+.hRight .phoneJd .phone .link2, .hRight .phoneJd .phone .link4 {
+    color: #C81623;
+    cursor: default;
+}
+
+.hRight .phoneJd .phone .link3 {
+    top: 99px;
+}
+
+.hRight .phoneJd .phone .link3, .hRight .phoneJd .phone .link4 {
+    left: 98px;
+}
+
+.hRight .phoneJd .phone .link4 {
+    top: 118px;
+}
+
+.hRight .phoneJd .phone .link5, .hRight .phoneJd .phone .link6, .hRight .phoneJd .phone .link7, .hRight .phoneJd .phone .link8, .hRight .phoneJd .phone .link9 {
+    display: block;
+    width: 56px;
+    height: 44px;
+    background: url("../img/phone.png") no-repeat;
+    background-position: 90px -46px;
+    z-index: 1;
+}
+
+.hRight .phoneJd .phone .link5, .hRight .phoneJd .phone .link6, .hRight .phoneJd .phone .link7 {
+    top: 43px;
+}
+
+.hRight .phoneJd .phone .link5, .hRight .phoneJd .phone .link8 {
+    left: 88px;
+}
+
+.hRight .phoneJd .phone .link6, .hRight .phoneJd .phone .link9 {
+    left: 143px;
+}
+
+.hRight .phoneJd .phone .link7 {
+    left: 200px;
+}
+
+.hRight .phoneJd .phone .link8, .hRight .phoneJd .phone .link9 {
+    top: 140px;
+}
+
+.hRight .em div.focusJd {
+    /*padding: 0 0 8px;*/
+}
+
+.hRight .em div.fuWu {
+    left: -1px;
+    width: 170px;
+}
+
+.hRight .em div.fuWu dl {
+    padding: 0 8px;
+}
+
+.hRight .em div.fuWu dl dt {
+    font-weight: bold;
+    padding-bottom: 8px;
+    height: 16px;
+}
+
+.hRight .em div.fuWu dl dd {
+    float: left;
+    width: 77px;
+    height: 25px;
+}
+
+.hRight .em div.fuWu .dotted {
+    border-bottom: 1px dotted #ccc;
+    height: 107px;
+}
+
+.hRight .em div.fuWu .busi dd {
+    padding-bottom: 8px;
+}
+
+.hRight li.fuWu .white, .hRight li.hidNav .white, .hRight li.myJd .white, .hRight li.phoneJd .white, .hRight .em .wfocusJd, .hRight .em div.focusJd, .hRight .em div.focusJd .img {
+    width: 100%;
+}
+
+.hRight .em .hidNav {
+    display: none;
+    right: 0;
+    margin-right: -1px;
+    padding: 20px 0 16px 0;
+    width: 1210px;
+}
+
+.hRight .em .hidNav dl {
+    float: left;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+    width: 259px;
+}
+
+.hRight .em .hidNav .list1 {
+    border: none;
+    width: 347px;
+}
+
+.hRight .em .hidNav dl dt {
+    padding-bottom: 6px;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hRight .em .hidNav dl dd {
+    float: left;
+    width: 86px;
+    line-height: 24px;
+}
+
+.hRight .em .hidNav dl.emLine {
+    margin: 5px 0;
+    padding: 0;
+    width: 1px;
+    height: 150px;
+    background: #ddd;
+}
+
+.ad {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: #e70012;
+}
+
+.ad .adImg {
+    display: block;
+    width: 1210px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.ad .adImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.ad .close {
+    position: absolute;
+    top: 5px;
+    right: 74px;
+    display: block;
+    width: 19px;
+    height: 19px;
+    background: url("../img/close.png") no-repeat;
+}
+
+.ad .close:hover {
+    background-position: 0 -19px;
+}
+
+.jd {
+    height: 100px;
+}
+
+.jd .logo {
+    float: left;
+    width: 362px;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.jd .logo .logo2013 {
+    display: block;
+    width: 270px;
+    height: 60px;
+    background: url("../img/logo-201305.png") no-repeat 0 0;
+}
+
+.jd .form {
+    position: relative;
+    float: left;
+    height: 36px;
+    margin-top: 25px
+}
+
+.jd .form .hide {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 379px;
+    border: 1px solid #CCC;
+    background: #fff;
+}
+
+.jd .form .text {
+    float: left;
+    width: 446px;
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+    padding: 4px;
+    margin-bottom: 4px;
+    border-width: 2px 0 2px 2px;
+    border-color: #B61D1D;
+    border-style: solid;
+    outline: 0;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+
+.jd .form .button {
+    float: left;
+    width: 82px;
+    height: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    background: #B61D1D;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    cursor: pointer;
+}
+
+.jd .hotWord {
+    float: left;
+    margin-top: 3px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.jd .hotWord li {
+    float: left;
+    margin-right: 10px;
+}
+
+.jd .hotWord li a {
+    color: #666;
+}
+
+.jd .hotWord li a:hover {
+    color: #C81623;
+}
+
+.jd .hotWord a.red {
+    color: #C81623;
+}
+
+.jd .shopping {
+    position: relative;
+    float: right;
+    margin: -35px 65px 0 0;
+    height: 36px;
+}
+
+.jd .shopping .shoppingTop {
+    width: 75px;
+    height: 34px;
+    border: 1px solid #DFDFDF;
+    padding: 0 28px 0 36px;
+    background: #F9F9F9;
+    text-align: center;
+    line-height: 34px;
+}
+
+.jd .shopping .shoppingTop i {
+    overflow: hidden;
+}
+
+.shopping .shoppingTop .car {
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    left: 18px;
+    width: 18px;
+    height: 16px;
+    background: url("../img/jd2015img.png") no-repeat;
+    background-position: 0 -58px;
+}
+
+.shopping .shoppingTop .zero {
+    position: absolute;
+    top: -4px;
+    left: 104px;
+    display: inline-block;
+    padding: 1px 2px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    background-color: #c81623;
+    border-radius: 7px 7px 7px 0;
+    min-width: 12px;
+    text-align: center;
+}
+
+.shopping .shoppingTop .arrowRight {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    overflow: hidden;
+    font: 400 13px/13px simsun;
+    color: #999;
+    cursor: default;
+}
+
+.shopping .shoppingHid {
+    position: absolute;
+    display: none;
+    right: 0;
+    padding: 10px 15px;
+    width: 278px;
+    background: #fff;
+    z-index: 888;
+}
+
+.shopping .shoppingHid .nogoods {
+    padding-left: 30px;
+    height: 49px;
+    line-height: 49px;
+    overflow: hidden;
+    color: #999;
+
+}
+
+.shopping .shoppingHid .nogoods i {
+    float: left;
+    width: 56px;
+    height: 49px;
+    background: url("../img/settleup-nogoods.png") no-repeat;
+}
+
+.shopping:hover .shoppingTop, .shopping:hover .shoppingHid {
+    display: block;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+.shopping:hover .shoppingTop {
+    background: #fff;
+}
+
+.shopping:hover .white {
+    display: block;
+    top: 33px;
+    left: 1px;
+    width: 139px;
+    height: 5px;
+    z-index: 999;
+}
+
+.nav {
+    border-bottom: 2px solid #B1191A;
+    height: 44px;
+}
+
+.nav .navLeft {
+    float: left;
+    width: 190px;
+    height: 44px;
+    padding: 0 10px;
+    background: #B1191A;
+    cursor: pointer;
+}
+
+.nav .navLeft a {
+    font: 400 15px/44px "microsoft yahei";
+    color: #fff;
+}
+
+.nav .navMiddle {
+    float: left;
+}
+
+.nav .navMiddle li {
+    float: left;
+    padding: 0 20px;
+    text-align: center;
+
+}
+
+.nav .navMiddle li a {
+    color: #333;
+    font: 400 16px/44px "microsoft yahei";
+}
+
+.nav .navMiddle li a:hover {
+    color: #C81623;
+}
+
+.nav .navRight {
+    position: relative;
+    top: -10px;
+    right: 50px;
+    float: right;
+    width: 200px;
+    height: 54px;
+}
+
+.nav .navRight a {
+    float: left;
+    width: 100%;
+    height: 100%;
+    background: url("../img/party.jpg") no-repeat;
+}
+
+.banner {
+    position: relative;
+    height: 466px;
+}
+
+.banner .bLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*margin-top: 2px;*/
+    width: 210px;
+    height: 466px;
+    background: #c81623;
+    color: #fff;
+    font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
+}
+
+.banner .bLeft .bList li {
+    position: relative;
+    padding: 0 10px;
+    border-left: 1px solid #b61d1d;
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.banner .bLeft .bList li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.banner .bLeft .bList li:hover a {
+    color: #B61D1D;
+}
+
+.banner .bLeft .bList li:hover {
+    background: #f7f7f7;
+    color: #B61D1D;
+}
+
+.banner .bLeft .bList li:hover i {
+    top: 0;
+    left: 205px;
+    width: 14px;
+    height: 31px;
+    font-size: 0;
+    background: #f7f7f7;
+    z-index: 11;
+}
+
+.bLeft .bList li i.bArrow {
+    position: absolute;
+    top: 9px;
+    right: 14px;
+    width: 4px;
+    height: 14px;
+    font: 400 9px/14px consolas;
+    z-index: 11;
+}
+
+.bLeft .leftHide {
+    display: none;
+    position: absolute;
+    top: -1px;
+    left: 209px;
+    border: 1px solid #b61d1d;
+    width: 999px;
+    background: #f7f7f7;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.bLeft .leftHide .tabCon {
+    display: none;
+}
+
+.bLeft .leftHide .tabCon.selected {
+    display: block;
+}
+
+.bLeft .leftHide .bLeftHidT {
+    float: left;
+    padding: 20px 0 0 20px;
+    width: 790px;
+    height: 24px;
+
+}
+
+.bLeft .leftHide .bLeftHidT .ol li {
+    float: left;
+    margin-right: 10px;
+    padding: 0 0 0 8px;
+    line-height: 24px;
+    background: #7C7171;
+    white-space: nowrap;
+}
+
+.bLeft .leftHide .bLeftHidT .ol li a {
+    color: #fff;
+}
+
+.bLeft .leftHide .bLeftHidT .ol li:hover {
+    background: #C81623;
+}
+
+.bLeft .leftHide .bLeftHidT .ol i {
+    display: inline-block;
+    margin-left: 8px;
+    width: 23px;
+    height: 24px;
+    font: 400 9px/24px consolas;
+    background: #5c5251;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bLeft .leftHide .bLeftHidT .ol li:hover i {
+    background: #B1191A;
+}
+
+.bLeft .leftHide .bLeftHidB {
+    float: left;
+    padding: 6px 0 0 20px;
+    width: 790px;
+    min-height: 409px;
+}
+
+.bLeft .leftHide .bLeftHidB dl {
+    width: 100%;
+    line-height: 2em;
+    overflow: hidden;
+}
+
+.bLeft .leftHide .bLeftHidB dl dt {
+    position: relative;
+    float: left;
+    padding: 8px 30px 0 0;
+    width: 54px;
+    text-align: right;
+    font-weight: 700;
+}
+
+.bLeft .leftHide .bLeftHidB dl dt i {
+    position: absolute;
+    top: 13px;
+    right: 18px;
+    width: 4px;
+    height: 14px;
+    font: 400 9px/14px consolas;
+}
+
+.bLeft .leftHide .bLeftHidB dl dd {
+    float: left;
+    border-bottom: 1px solid #eee;
+    padding: 6px 0;
+    width: 620px;
+    font-size: 0;
+}
+
+.bLeft .leftHide .bLeftHidB dl dd a {
+    float: left;
+    margin: 4px 0;
+    border-left: 1px solid #e0e0e0;
+    padding: 0 8px;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.bLeft .leftHide .bLeftHidB dl.bhid10 dd {
+    border-bottom: 0;
+}
+
+.bLeft .leftHide .bLeftHidR {
+    float: right;
+    width: 168px;
+    overflow: hidden;
+    margin: -23px 20px 10px 0;
+}
+
+.bLeft .leftHide .bLeftHidR .HidRightT a {
+    float: left;
+    margin: 1px 0 0 1px;
+}
+
+.bLeft .leftHide .HidRightT a img {
+    width: 83px;
+    height: 35px;
+}
+
+.bLeft .leftHide .HidRightB {
+    float: right;
+    margin-top: 10px;
+    width: 168px;
+}
+
+.bLeft .leftHide .HidRightB img {
+    margin-top: 1px;
+    width: 168px;
+    height: 134px;
+}
+
+.banner .bMiddle {
+    position: absolute;
+    left: 210px;
+    width: 4380px;
+    height: 466px;
+    margin: 12px 10px 0;
+    overflow: hidden;
+    font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
+}
+
+.banner .bMiddle .circle {
+    width: 730px;
+    height: 454px;
+}
+
+.banner .bMiddle .circle li {
+    position: absolute;
+    float: left;
+}
+
+.banner .bMiddle .circle img {
+    width: 100%;
+    height: 100%;
+}
+
+.bMiddle .focus {
+    position: absolute;
+    bottom: 10px;
+    left: 299px;
+    z-index: 2;
+}
+
+.bMiddle .focus li {
+    display: inline-block;
+    margin: 4px 2px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    background: #3e3e3e;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bMiddle .focus li.selected {
+    color: #fff;
+    background: #b61b1f;
+}
+
+.bMArrow {
+    display: none;
+}
+
+.bMiddle:hover .bMArrow {
+    display: block;
+}
+
+.bMArrow a {
+    position: absolute;
+    top: 50%;
+    display: block;
+    margin-top: -31px;
+    width: 28px;
+    height: 62px;
+    line-height: 62px;
+    color: #fff;
+    background: rgba(0, 0, 0, .2);
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: simsun;
+    z-index: 888;
+}
+
+.bMArrow a.aRight {
+    right: 0;
+    z-index: 888;
+}
+
+.bMiddle .bMArrow a.aRight {
+    left: 702px;
+}
+
+.banner .bMiddle:hover .bMArrow {
+    display: block;
+}
+
+.banner .bRight {
+    position: absolute;
+    right: 1px;
+    top: 12px;
+    width: 250px;
+}
+
+.banner .bRight .news {
+    border: 1px solid #e4e4e4;
+    border-bottom: 0;
+    height: 163px;
+    width: 248px;
+    overflow: hidden;
+    font-family: consolas;
+}
+
+.banner .bRight .news .newsT {
+    border-bottom: 1px dotted #E8E8E7;
+    padding: 0 15px;
+    height: 32px;
+    line-height: 32px;
+
+}
+
+.banner .bRight .newsT h2 {
+    float: left;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+    font-weight: 400;
+}
+
+.banner .bRight .newsT a {
+    float: right;
+}
+
+.banner .bRight .newsB {
+    padding: 5px 0 0 15px;
+    height: 120px;
+}
+
+.banner .bRight .newsB li {
+    position: relative;
+    width: 210px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.banner .bRight .newsB li b {
+    font-weight: bold;
+}
+
+.banner .bRight .tab {
+    border: solid 1px #e4e4e4;
+    overflow: hidden;
+    width: 248px;
+}
+
+.banner .bRight .tab .tabList {
+    position: relative;
+    width: 260px;
+    height: 209px;
+    overflow: hidden;
+}
+
+.banner .bRight .tab .tabList li {
+    position: relative;
+    float: left;
+    border-right: 1px solid #E8E8E7;
+    border-bottom: 1px solid #E8E8E7;
+    width: 62px;
+    height: 70px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.banner .bRight .tab .tabList li a {
+    display: block;
+    width: 62px;
+    height: 28px;
+    padding-top: 41px;
+    line-height: 28px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.banner .bRight .tab .tabList li i {
+    position: absolute;
+    top: 13px;
+    left: 18px;
+    width: 25px;
+    height: 25px;
+    background: url("../img/icon.png") no-repeat;
+}
+
+.bRight .tab .tabList li i.icon1 {
+    background-position: 0 0;
+}
+
+.bRight .tab .tabList li i.icon2 {
+    background-position: 0 -25px;
+}
+
+.bRight .tab .tabList li i.icon3 {
+    background-position: 0 -50px;
+}
+
+.bRight .tab .tabList li i.icon4 {
+    background-position: 0 -75px;
+}
+
+.bRight .tab .tabList li i.icon5 {
+    background-position: 0 -100px;
+}
+
+.bRight .tab .tabList li i.icon6 {
+    background-position: 0 -125px;
+}
+
+.bRight .tab .tabList li i.icon7 {
+    background-position: 0 -150px;
+}
+
+.bRight .tab .tabList li i.icon8 {
+    background-position: 0 -175px;
+}
+
+.bRight .tab .tabList li i.icon9 {
+    background-position: 0 -250px;
+}
+
+.bRight .tab .tabList li i.icon10 {
+    background-position: 0 -200px;
+}
+
+.bRight .tab .tabList li i.icon11 {
+    background-position: 0 -275px;
+}
+
+.bRight .tab .tabList li i.icon12 {
+    background-position: 0 -225px;
+}
+
+.bRight .tab .tabList li em {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 15px;
+}
+
+.bRight .tab .tabList li em.green1 {
+    background: url("../img/jian.png") no-repeat;
+}
+
+.bRight .tab .tabList li em.green2 {
+    background: url("../img/juan.png") no-repeat;
+}
+
+.banner .bRight .tab .tabTop {
+    display: none;
+}
+
+.banner .bRight .pic {
+    margin-top: 4px;
+    width: 250px;
+    height: 75px;
+    overflow: hidden;
+}
+
+.banner .bRight .pic img {
+    width: 100%;
+    height: 100%;
+}
+
+/*before floors*/
+
+.beforeFloors .beFlFirst {
+    margin: 10px 0 20px;
+    height: 164px;
+}
+
+.beforeFloors .beFlFirst a.firstLeft, .beforeFloors .beFlFirst .firstRight, .beforeFloors .beFlFirst .firstRight li, .beforeFloors .beFlSecond .guess .like {
+    float: left;
+}
+
+.beforeFloors .beFlFirst a.firstLeft {
+    width: 210px;
+    height: 151px;
+    background: url("../img/beflLeftbg.jpg") no-repeat;
+    z-index: 999;
+}
+
+.beforeFloors .beFlFirst .firstRight {
+    position: relative;
+    width: 1000px;
+    height: 164px;
+    overflow: hidden;
+}
+
+.beforeFloors .beFlFirst .firstRight .firstUl {
+    position: absolute;
+    top: 0;
+}
+
+.beforeFloors .beFlFirst .firstRight li {
+    height: 164px;
+}
+
+.beFlFirst .firstRight .firstUl li a {
+    float: left;
+    margin-right: 1px;
+    width: 249px;
+    height: 164px;
+}
+
+.beFlFirst .firstRight .firstUl li a img {
+    width: 100%;
+    height: 100%;
+}
+
+.beforeFloors .beFlFirst .firstRight:hover .bMArrow {
+    display: block;
+    z-index: 888;
+}
+
+.beforeFloors .firstRight .bMArrow .aRight {
+    right: 0;
+}
+
+.beFlSecond {
+    height: 289px;
+    overflow: hidden;
+}
+
+.beforeFloors .beFlSecond .guess ,.sale .m .mtop,.sale .c .mt{
+    height: 36px;
+}
+
+.beforeFloors .beFlSecond .guess .like {
+    padding-right: 228px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #333;
+    background: url("../img/homebg.png") 85px -91px no-repeat;
+}
+
+.beforeFloors .beFlSecond .guess .change {
+    float: right;
+    margin-top: 8px;
+    padding-right: 25px;
+    height: 18px;
+    background: url("../img/homebg.png") -310px -5px no-repeat;
+}
+
+.beforeFloors .beFlSecond .guess .change:hover {
+    background-position: -310px -29px;
+}
+
+.beforeFloors .beFlSecond .guessList {
+    border: 1px solid #ededed;
+    border-top: 0;
+    height: 232px;
+    overflow: visible;
+}
+
+.beforeFloors .beFlSecond .guessList .line {
+    position: relative;
+    height: 1px;
+    font-size: 0;
+    background-color: #d1d1d1;
+
+}
+
+.beFlSecond .guessList .line span {
+    position: absolute;
+    top: -2px;
+    right: 1208px;
+    width: 365px;
+    height: 5px;
+    overflow: hidden;
+    background: #b72323 url("../img/homebg.png") no-repeat 0 -124px;
+}
+
+.beFlSecond .guessList ul {
+    height: 210px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.beFlSecond .guessList ul li {
+    float: left;
+    padding-bottom: 15px;
+    width: 201px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.beFlSecond .guessList li .guessImg {
+    width: 201px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.beFlSecond .guessList li .imgInfo {
+    padding: 0 36px;
+    border-left: 1px solid #e6e6e6;
+}
+
+.beFlSecond .guessList li.fore1 .imgInfo {
+    border-left: 0;
+}
+
+.beFlSecond .guessList .imgInfo .g-name {
+    margin-bottom: 6px;
+    height: 36px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.beFlSecond .guessList .imgInfo .g-price {
+    font-size: 18px;
+    color: #b51d1a;
+    text-align: left;
+}
+
+.beFlSecond .guessList .imgInfo .g-price i {
+    font-size: 14px;
+}
+
+.beFlThird {
+    height: 463px;
+}
+
+.beFlThird .JDlife {
+    margin-bottom: 20px;
+}
+
+.beFlThird h2 {
+    color: #333;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.JDlife .life-content {
+    border: 1px solid #ededed;
+    height: 405px;
+    overflow: hidden;
+}
+
+.life-content .con1, .life-content .con2, .life-content .con3 {
+    float: left;
+    height: 100%;
+    background: #f7f7f7;
+}
+
+.life-content .con1 a, .life-content .con2 a {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    width: 403px;
+    overflow: hidden;
+}
+
+.life-content p {
+    border-bottom: 1px dashed #e0e0e0;
+    margin: 0 20px;
+    color: #333;
+    text-align: center;
+    font: 700 15px/40px 'Microsoft Yahei';
+    z-index: 1;
+}
+
+.life-content .con1 dl, .life-content .con2 dl, .life-content .con3 dl {
+    position: absolute;
+    left: 10px;
+    top: 109px;
+    color: #333;
+    font-family: 'Microsoft Yahei';
+    line-height: 1.2;
+    z-index: 2;
+}
+
+.life-content dl dt {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.life-content .con1 dl dd {
+    margin-bottom: 4px;
+}
+
+.life-content .con1-a1 dl {
+    left: 45px;
+}
+
+.life-content a.con1-a2, .life-content a.con1-a3 {
+    float: left;
+    width: 201px;
+    height: 158px;
+    border-bottom: none;
+}
+
+.life-content a.con1-a2 dl, .life-content a.con1-a3 dl, .life-content a.con2-a3 dl {
+    top: 48px;
+}
+
+.life-content .con2 a {
+    width: 228px;
+    background: #ffffff;
+}
+
+.life-content .con-brands {
+    float: right;
+    position: relative;
+    width: 171px;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.life-content .con-brands .brands-left {
+    border-right: 1px dashed #e0e0e0;
+}
+
+.life-content .con-brands .brands-left, .life-content .con-brands .brands-right {
+    position: relative;
+    float: left;
+    margin-top: 13px;
+    width: 85px;
+    height: 381px;
+    overflow: hidden;
+}
+
+.life-content .con-brands ul {
+    margin-top: -13px;
+    overflow: hidden;
+}
+
+.life-content .con-brands li {
+    position: relative;
+    float: right;
+    width: 74px;
+    height: 57px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.life-content .con-brands a {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 75px;
+    height: 57px;
+    line-height: 57px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.life-content .con-brands .brands-left a {
+    right: 0;
+}
+
+.life-content .con-brands .brands-right li {
+    float: left;
+}
+
+.life-content .con-brands .brands-right {
+    border-right: 0;
+}
+
+.life-content .con-brands .brands-right a {
+    right: -6px;
+}
+
+.floorBanner {
+    margin-bottom: 30px;
+    height: 110px;
+    width: 1200px;
+    overflow: visible;
+}
+
+.floorBanner .flo {
+    margin: 0 auto;
+    width: 1200px;
+    overflow: hidden;
+}
+
+.floorBanner .flo a {
+    float: left;
+}
+
+.floorBanner .flo img {
+    width: 400px;
+    height: 125px;
+}
+
+/*--FLOOR--*/
+
+.FLOOR .clothers-F1 {
+    height: 737px;
+}
+
+.FLOOR .clothers-F1 .nav-F1 {
+    border-bottom: 1px solid #c81623;
+    height: 36px;
+    overflow: visible;
+    position: relative;
+}
+
+.FLOOR h2 {
+    position: relative;
+    float: left;
+    padding-left: 40px;
+    color: #333;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.FLOOR h2 i {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 21px;
+    height: 25px;
+    padding-right: 10px;
+    background: url(//misc.360buyimg.com/product/home/1.0.0/widget/floor/i/floor1new.png) no-repeat 0 0;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.FLOOR h2 i.bg {
+    background: url(//misc.360buyimg.com/product/home/1.0.0/css/i/product_home_1.0.0.png?__sprite) no-repeat 0 0;
+    background-position: 0 0;
+    animation-name: scaleDisc;
+    animation-duration: 1s;
+}
+
+.w58 {
+    width: 58px;
+}
+
+.w82 {
+    width: 82px;
+}
+
+.con-F1 .tab {
+    float: right;
+    margin-top: 1px;
+    border: solid 1px #ededed;
+    border-bottom: 0 none;
+    height: 34px;
+    line-height: 34px;
+    z-index: 1;
+}
+
+.con-F1 .tab li {
+    position: relative;
+    float: left;
+    display: inline;
+    height: 34px;
+}
+
+.con-F1 .tab li a {
+    float: left;
+    height: 34px;
+    padding: 0 16px;
+    text-decoration: none;
+    line-height: 34px;
+    overflow: hidden;
+    background: #fff;
+    border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
+    white-space: nowrap;
+}
+
+.con-F1 .tab li span {
+    position: absolute;
+    width: 1px;
+    background: #ccc;
+    overflow: hidden;
+    height: 14px;
+    top: 10px;
+    right: 0;
+}
+
+.con-F1 .tab li:hover a, .con-F1 .tab li.tab-selected a {
+    position: absolute;
+    white-space: nowrap;
+    border-left: solid 1px #c81623;
+    border-right: solid 1px #c81623;
+    border-top: solid 3px #c81623;
+    top: -1px;
+    left: -1px;
+    height: 33px;
+    line-height: 30px;
+    color: #c81623;
+    text-indent: 1px;
+}
+
+.con-F1 .tab li:hover span, .con-F1 .tab li.tab-selected span {
+    display: none;
+}
+
+.con-F1 .tab li span.last {
+    background: #fff;
+}
+
+.Middle-F1 .side {
+    position: relative;
+    float: left;
+    width: 330px;
+    height: 633px;
+    overflow: hidden;
+    font-family: "microsoft yahei";
+    background: #e5ebeb;
+}
+
+.side .sideBanner {
+    position: relative;
+    height: 474px;
+}
+
+.side .sideBanner a {
+    display: block;
+    height: 475px;
+}
+
+.side .sideBanner a img {
+    width: 330px;
+    height: 475px;
+    vertical-align: top;
+}
+
+.side .sideThemes {
+    position: relative;
+    margin-top: -221px;
+    padding-left: 25px;
+    height: 92px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .5);
+}
+
+.side .sideThemes li {
+    float: left;
+    width: 100px;
+    height: 26px;
+    padding: 10px 0;
+}
+
+.side .sideThemes a {
+    float: left;
+}
+
+.side .sideThemes i, .side .sideThemes span {
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+}
+
+.side .sideThemes .icon {
+    margin-right: 5px;
+    width: 26px;
+    background: url(//misc.360buyimg.com/product/home/1.0.0/widget/clothes/i/clothesicon.png) 0 0 no-repeat;
+}
+
+.side .sideThemes li.fore2 .icon {
+    background-position: 0 -26px;
+}
+
+.side .sideThemes li.fore3 .icon {
+    background-position: 0 -52px;
+}
+
+.side .sideThemes li.fore4 .icon {
+    background-position: 0 -78px;
+}
+
+.side .sideThemes li.fore5 .icon {
+    background-position: 0 -104px;
+}
+
+.side .sideThemes li.fore6 .icon {
+    background-position: 0 -130px;
+}
+
+.side .sideThemes span {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.side .sideWords {
+    position: relative;
+    border-bottom: 1px solid #ededed;
+    height: 128px;
+    background: rgba(255, 255, 255, .7);
+    font-family: \5b8b\4f53;
+}
+
+.side .sideWords li {
+    float: left;
+    padding: 16px 0 0 25px;
+    height: 96px;
+    width: 135px;
+    overflow: hidden;
+}
+
+.side .sideWords a {
+    float: left;
+    margin-right: 10px;
+    line-height: 24px;
+    color: #999;
+    white-space: nowrap;
+}
+
+.side .sideWords a:hover {
+    color: #C81623;
+}
+
+.side .sideBottom {
+    border: 1px solid #ededed;
+    border-left: 1px solid #f7f5ee;
+    border-top: 0;
+    width: 328px;
+    height: 158px;
+    overflow: hidden;
+}
+
+.side .sideBottom img {
+    width: 328px;
+    height: 157px;
+}
+
+.Middle-F1 .middleHide {
+    position: relative;
+    width: 880px;
+    height: 633px;
+    overflow: hidden;
+}
+
+.Middle-F1 .main {
+    display: none;
+    width: 880px;
+    height: 633px;
+    overflow: hidden;
+}
+
+.Middle-F1 .main.first {
+    display: block;
+}
+
+.main .mainBody {
+    float: left;
+    width: 660px;
+}
+
+.mainBody li {
+    float: left;
+    width: 220px;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.mainBody li, .main-extra li {
+    height: 158px;
+}
+
+.mainBody li.fore1 {
+    width: 440px;
+}
+
+.mainBody li img {
+    width: 439px;
+    height: 157px;
+}
+
+.main a {
+    display: block;
+    border-right: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+    overflow: hidden;
+}
+
+.mainBody li.fore2 {
+    width: 440px;
+    height: 159px;
+    padding-top: 316px;
+}
+
+.mainBody li.fore2 a {
+    height: 158px;
+}
+
+.mainBody li.fore3, .mainBody li.fore4, .mainBody li.fore5, .mainBody li.fore6 {
+    float: right;
+}
+
+.mainBody li.fore3 {
+    margin-top: -158px;
+}
+
+.mainBody li.fore3 img, .mainBody li.fore4 img, .mainBody li.fore5 img, .mainBody li.fore6 img, .main-extra li.fore1 img, .main-extra li.fore2 img {
+    width: 219px;
+    height: 157px;
+}
+
+.main-extra {
+    float: left;
+    width: 220px;
+}
+
+.main-extra li.fore3 {
+    height: 371px;
+}
+
+.main-extra li.fore3 img {
+    width: 219px;
+    height: 316px;
+}
+
+/*--First pic--*/
+.silder {
+    position: absolute;
+    top: 158px;
+    left: 0;
+    width: 439px;
+    height: 315px;
+    overflow: hidden;
+    border-right: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.silder .sliderBody {
+    position: relative;
+}
+
+.silder .sliderBody .silderMain {
+    position: absolute;
+    left: 0;
+    width: 1760px;
+}
+
+.sliderBody .silderMain li {
+    float: left;
+}
+
+.sliderBody .silderMain li img {
+    width: 439px;
+    height: 315px
+}
+
+.silder:hover .bMArrow {
+    display: block;
+}
+
+.silder .bMArrow .aRight {
+    right: -1px;
+}
+
+.silder .page {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    line-height: 0;
+    text-align: center;
+    bottom: 19px;
+    cursor: default;
+}
+
+.silder .page li {
+    display: inline-block;
+    margin: 0 2px;
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    background: #3e3e3e;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.silder .page li.selected {
+    color: #fff;
+    background: #b61b1f;
+}
+
+.bottom-F1 {
+    background: #f7f7f7;
+    padding: 13px 0 13px 0;
+    margin-top: 10px;
+}
+
+.bottom-F1 ul {
+    height: 40px;
+    overflow: hidden;
+}
+
+.bottom-F1 ul li {
+    float: left;
+    width: 120px;
+    height: 40px;
+    border-left: 1px dotted #ccc;
+    text-align: center;
+}
+
+.bottom-F1 ul li.fore1 {
+    border-left: none;
+}
+
+.bottom-F1 ul li img {
+    width: 100px;
+    height: 40px;
+}
+
+.elevator {
+    display: none;
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    margin-top: -170px;
+    width: 30px;
+    height: 341px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.elevator ul {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.elevator ul li {
+    margin-top: -1px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.elevator ul li i {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    color: #625351;
+    font-size: 14px;
+    font-family: Arial;
+    background: url('../img/dashed.png') 0 0 no-repeat;
+}
+
+.elevator ul li .etitle {
+    display: none;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 12px;
+    background: #c81623;
+}
+.elevator ul li.bg .etitle{
+    display: block;
+}
+
+.elevator ul li:hover i {
+    display: none;
+}
+
+.elevator ul li:hover a.etitle {
+    display: block;
+    background: #c81623;
+}
+
+.elevator ul li i:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #c81623;
+}
+
+/*--toolbar--*/
+.toolbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9990;
+    width: 0;
+    height: 100%;
+}
+
+.toolbar .J-wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-right: 6px solid #7a6e6e;
+    -webkit-transition: right .3s ease-in-out 0s;
+    -moz-transition: right .3s ease-in-out 0s;
+    -ms-transition: right .3s ease-in-out 0s;
+    -o-transition: right .3s ease-in-out 0s;
+    transition: right .3s ease-in-out 0s;
+}
+
+.toolbar .r270 {
+    right: 270px;
+
+}
+
+.toolbar .J-wrap .J-panel {
+    position: absolute;
+    left: 6px;
+    top: 0;
+    width: 270px;
+    height: 100%;
+    z-index: 2;
+    background: #eceaea;
+    -webkit-animation: toolbar-scaleIn .35s ease-in-out;
+    -moz-animation: toolbar-scaleIn .35s ease-in-out;
+    -ms-transition: toolbar-scaleIn .35s ease-in-out;
+    -o-transition: toolbar-scaleIn .35s ease-in-out;
+    animation: toolbar-scaleIn .35s ease-in-out;
+}
+
+.toolbar .J-wrap .right270 {
+    width: 270px;
+    height: 100%;
+    position: absolute;
+    background: #eceaea;
+}
+
+.toolbar .J-wrap .J-panel h3 {
+    position: relative;
+    width: 270px;
+    height: 40px;
+    line-height: 40px;
+    background: #eceaea;
+}
+
+.J-wrap .J-panel h3 .j-shopping {
+    display: inline-block;
+    height: 40px;
+    color: #5e5050;
+    font: 16px/40px "microsoft yahei";
+}
+
+.J-wrap .J-panel .j-shopping i, .J-wrap .J-panel .J-close, .J-tab .J-tab-jdVip .tab-tip, .J-tab .tab-ico, .tool-footer .tab-ico {
+    display: inline-block;
+    background: url(//static.360buyimg.com/devfe/toolbar/1.0.0/css/i/toolbars.png) no-repeat;
+}
+
+.J-wrap .J-panel .j-shopping i {
+    margin: 11px 4px 0 10px;
+    width: 20px;
+    height: 18px;
+    vertical-align: top;
+    background-position: 0 0;
+}
+
+.J-wrap .J-panel .J-close {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 8px;
+    top: 16px;
+    cursor: pointer;
+    background-position: 0 -250px;
+    -webkit-transition: transform .2s ease-out 0s;
+    -moz-transition: transform .2s ease-out 0s;
+    -ms-transition: transform .2s ease-out 0s;
+    -o-transition: transform .2s ease-out 0s;
+    transition: transform .2s ease-out 0s;
+}
+
+.J-wrap .J-panel .J-close:hover {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.J-panel .J-panel-content {
+    position: relative;
+    width: 270px;
+    height: 249px; /*JS¸Ä±ä*/
+    /*overflow-y: auto;*/
+    overflow: hidden;
+}
+
+.J-panel .J-panel-content .J-cart-tips {
+    padding: 6px 5px;
+    border: 1px solid #edd28b;
+    background: #fffdee;
+    text-align: center;
+}
+
+.J-panel-content .J-cart-tips .tip-text {
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: middle;
+    color: #333;
+}
+
+.J-panel-content .J-cart-tips a {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    margin-left: 5px;
+    color: #fff;
+    vertical-align: middle;
+    background: #c81623;
+}
+
+.J-panel-content .J-tipbox2 {
+    width: 270px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -60px;
+    text-align: center;
+}
+
+.J-panel-content .J-tipbox2 i {
+    display: inline-block;
+    width: 113px;
+    height: 35px;
+    background: url(//static.360buyimg.com/devfe/toolbar/1.0.0/css/i/jdm-toolbar-face.png) no-repeat;
+    background-position: 0 0;
+    overflow: hidden;
+}
+
+.J-panel-content .J-tipbox2, .J-panel-content .J-footer p {
+    line-height: 20px;
+}
+
+.J-wrap .J-footer {
+    position: relative;
+    height: 40px;
+    padding: 5px 110px 5px 5px;
+}
+
+.J-wrap .J-footer em {
+    font-family: verdana;
+    color: #c81623;
+    font-weight: bold;
+}
+
+.J-wrap .J-footer a {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 110px;
+    height: 35px;
+    font: 16px/35px "microsoft yahei";
+    text-align: center;
+    background: #c81623;
+    color: #fff;
+}
+
+.J-wrap .J-tab {
+    position: absolute;
+    top: 50%;
+    left: -29px;
+    width: 35px;
+    margin-top: -61px;
+}
+
+.J-wrap .J-tool-tab {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    background-color: #7a6e6e;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+
+.J-wrap .J-tab .J-tab-jdVip:hover, .J-wrap .J-tab div.J-tab-like:hover {
+    background: #c81623;
+}
+
+.J-tab-tool {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    background-color: #7a6e6e;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+
+.J-tab .J-tab-jdVip .tab-tip {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 6px;
+    height: 6px;
+    background-position: -150px -150px;
+    z-index: 999;
+}
+
+.J-tab-tool .tab-ico {
+    width: 34px;
+    height: 35px;
+    margin-left: 1px;
+    position: relative;
+    z-index: 2;
+    background-color: #7a6e6e;
+    background-position: -88px -175px;
+}
+
+.J-tab-tool .tab-text {
+    position: absolute;
+    z-index: 1;
+    left: 35px;
+    top: 0;
+    width: 62px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    text-align: center;
+    font-family: "microsoft yahei";
+    background-color: #7a6e6e;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    -webkit-transition: left .3s ease-in-out .1s;
+    -moz-transition: left .3s ease-in-out .1s;
+    transition: left .3s ease-in-out .1s;
+}
+
+.J-tab-tool:hover .tab-text {
+    left: -60px;
+    background-color: #c81623;
+}
+
+.J-tab-jdVip:hover .tab-tip {
+    display: none;
+}
+
+.J-tab-tool:hover .tab-ico {
+    background-color: #c81623;
+}
+
+.J-tab .J-tab-shopping i.selected {
+    background-color: #c81623;
+}
+
+.J-tab .J-tab-shopping .tab-ico {
+    background-position: -50px 0;
+}
+
+.J-tab .J-tab-like .tab-ico {
+    background-position: -50px -50px;
+}
+
+.J-tab .J-tab-like .tab-ico {
+    background-position: -50px -50px;
+}
+
+.J-wrap .tool-footer {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    left: -29px;
+}
+
+.tool-footer .tool-footer-top .tab-ico {
+    background-position: -50px -250px;
+}
+
+.tool-footer .tool-footer-feedback .tab-ico {
+    background-position: -50px -300px;
+}
+
+.tool-footer .tool-footer-survey .tab-text {
+    left: 0;
+    width: 35px;
+    height: 30px;
+    padding: 2px 0 3px;
+    line-height: 15px;
+    background: #c81623;
+}
+
+.sale {
+    height: 339px;
+}
+.sale .m{
+    float: left;
+    margin-bottom: 20px;
+    width: 900px;
+    overflow: hidden;
+}
+.sale h2{
+    float: left;
+    display: inline;
+    line-height: 30px;
+    font-size: 20px;
+}
+.sale .m .mbottom{
+    width: 899px;
+    height: 281px;
+    border: solid #E5E5E5;
+    border-width: 1px 0 1px 1px;
+}
+.sale .m .mbottom{
+    width: 910px;
+    overflow: hidden;
+}
+.sale .m .mbottom li{
+    float: left;
+    width: 199px;
+    height: 104px;
+    padding: 18px 10px;
+    border-right: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+    overflow: hidden;
+}
+.sale .m .mbottom li.fore1{
+    width: 219px;
+    height: 245px;
+}
+.sale .m .mbottom li .p-img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.sale .m .mbottom li.fore1 .p-img{
+    width: 219px;
+    height: 180px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.sale .m .mbottom li .p-img img{
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -ms-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+.mbottom li.fore1 .p-img img{
+    width: 160px;
+    height: 160px;
+}
+.sale .m .mbottom li .p-info{
+    float: right;
+    width: 94px;
+}
+.sale .m .mbottom li.fore1 .p-info{
+    width: 200px;
+}
+.sale .m .mbottom li .p-name {
+    height: 36px;
+    margin-bottom: 6px;
+    color: #666;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.sale .m .mbottom  li.fore1 .p-name {
+    height: 18px;
+}
+.sale .m .mbottom li .p-price {
+    margin-bottom: 5px;
+}
+.sale .m .mbottom li.fore1 .p-price {
+    float: left;
+}
+.sale .m .mbottom li .p-price span{
+    display: block;
+    color: #e12228;
+    font-size: 16px;
+    font-weight: 700;
+}
+.sale .m .mbottom  li:hover .p-img img {
+    margin-left: -10px;
+}
+.sale .c{
+    float: left;
+    width: 310px;
+    overflow: hidden;
+}
+.sale .c .mc{
+    width: 268px;
+    height: 226px;
+    padding: 35px 20px 20px;
+    border: 1px solid #EDEDED;
+}
+.sale .c .mc .sw{
+    position: relative;
+    overflow: hidden;
+    width: 268px;
+    height: 240px;
+}
+.sale .c .mc ul{
+    position: absolute;
+    top: 0;
+}
+.sale .c .mc ul li{
+    height: 100px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.sale .c .p-img {
+    float: left;
+    display: inline;
+    padding: 10px 0;
+    width: 80px;
+    height: 80px;
+}
+.sale .c .p-img img{
+    width: 80px;
+    height: 80px;
+}
+.sale .c .p-info {
+    float: left;
+    display: inline;
+    width: 166px;
+    padding-left: 20px;
+    margin-top: 3px;
+}
+.sale .c .author-info {
+    height: 28px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.sale .c .author-info img {
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.sale .c .author-info span{
+    line-height: 28px;
+}
+.sale .c .p-detail{
+    position: relative;
+    width: 130px;
+    height: 34px;
+    padding: 10px 15px 10px 20px;
+    background: #f8f8f8;
+    color: #999;
+    overflow: visible;
+}
+.sale .c .p-detail a£¬.sale .c .p-detail p{
+    display: block;
+    height: 38px;
+    overflow: hidden;
+    word-break: break-all;
+}
+.sale .c .p-detail .icon-r {
+    font-size: 38px;
+    line-height: 38px;
+    color: #aaa;
+    vertical-align: -24px;
+    font-family: Arial;
+}
+.sale .c .detail-arrow {
+    position: absolute;
+    left: -9px;
+    top: 19px;
+    color: #f8f8f8;
+    font-size: 20px;
+}
+.sale .c .icon-l {
+    position: absolute;
+    left: 4px;
+    top: 7px;
+    font-size: 38px;
+    line-height: 38px;
+    color: #aaa;
+    font-family: Arial;
+}
+.footer{
+    height: 457px
+}
+#service-2014 {
+    margin-bottom: 20px;
+    height: 276px;
+}
+#service-2014 .slogen {
+    position: relative;
+    height: 54px;
+    padding: 20px 0;
+    margin-bottom: 14px;
+    background: #F5F5F5;
+    text-align: center;
+}
+
+#service-2014 .slogen .item {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    width: 245px;
+    height: 54px;
+    text-align: left;
+    vertical-align: middle;
+    font: 400 18px/50px "microsoft yahei";
+}
+#service-2014 .slogen .fore1 {
+    margin-left: -604px;
+}
+ #service-2014 .slogen .item {
+    width: 302px;
+}
+#service-2014 .slogen .item i {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 220px;
+    height: 54px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+#service-2014 .slogen .fore1 i {
+    background-image: url(//misc.360buyimg.com/jdf/1.0.0/unit/service/1.0.0/i/service_items_1.png);
+}
+#service-2014 .slogen .item b {
+    padding: 0 10px;
+    font-size: 24px;
+    color: #C81623;
+}
+ #service-2014 .slogen .fore2 {
+    margin-left: -304px;
+}
+#service-2014 .slogen .fore3 {
+    margin-left: 0;
+}
+#service-2014 .slogen .fore4 {
+    margin-left: 304px;
+}
+#service-2014 .slogen .fore2 i {
+    background-image: url(//misc.360buyimg.com/jdf/1.0.0/unit/service/1.0.0/i/service_items_2.png);
+}
+#service-2014 .slogen .fore3 i {
+    background-image: url(//misc.360buyimg.com/jdf/1.0.0/unit/service/1.0.0/i/service_items_3.png);
+}
+#service-2014 .slogen .fore4 i {
+    background-image: url(//misc.360buyimg.com/jdf/1.0.0/unit/service/1.0.0/i/service_items_4.png);
+}
+#service-2014 dl.fore5 {
+    width: 100px;
+}
+#service-2014 dl {
+    float: left;
+    width: 199px;
+}
+#service-2014 dt {
+    padding: 6px 0;
+    font: 400 16px/24px "microsoft yahei";
+}
+#service-2014 dd {
+    line-height: 20px;
+}
+.h168{
+    height: 168px;
+}
+#footer-2014 {
+    border-top: 1px solid #E5E5E5;
+    padding: 20px 0 30px;
+    height: 144px;
+    text-align: center;
+}
+#footer-2014 .links a {
+    margin: 0 10px;
+}
+#footer-2014 .copyright {
+    margin: 10px 0;
+}
+#footer-2014 .authentication a {
+    margin: 0 5px;
+    text-decoration: none;
+}
+#coverage {
+    float: right;
+    width: 310px;
+    height: 168px;
+    background: url(//misc.360buyimg.com/product/skin/2013/i/20130330B_1.png) no-repeat 60px -131px;
+}
+#coverage .dt {
+    padding: 6px 40px 15px 80px;
+    font: 400 16px/24px "microsoft yahei";
+}
+
+#coverage .dd {
+    padding: 0 40px 15px 80px;
+}
+.ar {
+    text-align: right;
+}
+
+
