@@ -1,8 +1,8 @@
 [
-  {"src":"../img/banner1.jpg","title":"标题","desc":"描述"},
-  {"src":"../img/banner2.jpg","title":"标题","desc":"描述"},
-  {"src":"../img/banner3.jpg","title":"标题","desc":"描述"},
-  {"src":"../img/banner4.jpg","title":"标题","desc":"描述"},
-  {"src":"../img/banner5.jpg","title":"标题","desc":"描述"},
-  {"src":"../img/banner6.jpg","title":"标题","desc":"描述"}
+  {"src":"img/banner1.jpg","title":"标题","desc":"描述"},
+  {"src":"img/banner2.jpg","title":"标题","desc":"描述"},
+  {"src":"img/banner3.jpg","title":"标题","desc":"描述"},
+  {"src":"img/banner4.jpg","title":"标题","desc":"描述"},
+  {"src":"img/banner5.jpg","title":"标题","desc":"描述"},
+  {"src":"img/banner6.jpg","title":"标题","desc":"描述"}
 ]
