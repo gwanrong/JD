@@ -49,7 +49,7 @@ var banner = (function () {
 
     function getData() {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', "../json/data.txt?_=" + Math.random(), false);
+        xhr.open('GET', "json/data.txt?_=" + Math.random(), false);
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && /^2\d{2}$/.test(xhr.status)) {
                 data = utils.jsonParse(xhr.responseText);
